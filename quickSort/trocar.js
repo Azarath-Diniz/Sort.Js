@@ -1,10 +1,8 @@
 // troca dois itens de uma lista de lugar
 function trocar(array, de, para) {
-    const deAtual = array[de];
-    const paraAtual = array[para];
-
-    array[para] = deAtual;
-    array[de] = paraAtual;
+    const temp = array[de];
+    array[de] = array[para];
+    array[para] = temp;
 
     return array;
 }
